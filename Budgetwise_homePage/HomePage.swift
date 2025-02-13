@@ -31,7 +31,8 @@ struct HomePage: View {
                     ZStack(alignment: .top) {
                         BottomRoundedRectangle(radius: 10)
                             .fill(Color(red: 82/255, green: 130/255, blue: 226/255))
-                            .frame(height: 130)
+                            .frame(height: 200)
+                            .offset(y: -70)
                             .ignoresSafeArea(edges: .top)
                         
                         VStack(spacing: 0) {
@@ -232,6 +233,3 @@ struct HomePage_Previews: PreviewProvider {
                 }
     }
 }
-
-
-
