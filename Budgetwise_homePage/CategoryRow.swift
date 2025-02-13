@@ -47,5 +47,3 @@ struct CategoryRow: View {
         }
     }
 }
-
-

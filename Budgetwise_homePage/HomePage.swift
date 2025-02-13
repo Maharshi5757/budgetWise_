@@ -10,51 +10,52 @@ struct HomePage: View {
         BudgetCategory(name: "Groceries", iconName: "basket", color: Color(red: 0/255, green: 188/255, blue: 56/255), spent: 130, budget: 200),
         BudgetCategory(name: "Housing", iconName: "house.fill", color: Color(red: 255/255, green: 55/255, blue: 60/255), spent: 5654, budget: 5654)
     ]
-    
+    @State private var showingAddCategory = false
+    @State private var showingActionSheet = false
     @State private var showingAddTransaction = false
     @State private var selectedTab = "Home"
-    
+
     var totalSpent: Double {
         categories.reduce(0) { $0 + $1.spent }
     }
-    
+
     var totalBudget: Double {
         categories.reduce(0) { $0 + $1.budget }
     }
-    
+
     var body: some View {
         NavigationView {
             ZStack {
                 Color(uiColor: .systemBackground).ignoresSafeArea()
-                
+
                 ScrollView {
                     ZStack(alignment: .top) {
                         BottomRoundedRectangle(radius: 10)
                             .fill(Color(red: 82/255, green: 130/255, blue: 226/255))
                             .frame(height: 200)
-                            .offset(y: -70)
+                            .offset(y: -90)
                             .ignoresSafeArea(edges: .top)
-                        
+
                         VStack(spacing: 0) {
                             headerView
-                                
-                            VStack(spacing: 10) {
+
+                            VStack(spacing: 0) {
                                 VStack {
                                     Text("$\(totalBudget - totalSpent, specifier: "%.0f")")
                                         .font(.largeTitle)
                                         .fontWeight(.bold)
                                         .foregroundColor(Color(uiColor: .systemGreen))
                                         .padding(.top, 10)
-                                     
+
                                     Text("Remaining in Budget")
                                         .font(.subheadline)
                                         .padding(.bottom, 10)
-                                    
+
                                     ProgressBar(value: Float(totalSpent / totalBudget))
                                         .frame(height: 20)
                                         .padding(.horizontal)
                                         .scaleEffect(x: 1, y: 2, anchor: .center)
-                                    
+
                                     HStack {
                                         Text("Spent:")
                                             .font(.caption)
@@ -62,9 +63,9 @@ struct HomePage: View {
                                         Text("$\(totalSpent, specifier: "%.0f")")
                                             .fontWeight(.bold)
                                             .font(.system(size: 19))
-                                        
+
                                         Spacer()
-                                        
+
                                         Text("Budget:")
                                             .font(.caption)
                                             .padding(.horizontal, -3)
@@ -73,42 +74,45 @@ struct HomePage: View {
                                             .font(.system(size: 19))
                                     }
                                     .padding(.vertical, 20)
+                                    
+                                    Divider()
+                                        .background(Color.gray.opacity(0.3))
                                 }
                                 .padding(.horizontal)
                                 .background(Color(uiColor: .secondarySystemBackground))
-                                .cornerRadius(10)
-                                .shadow(radius: 5)
-                                .padding()
+                                .padding(.horizontal)
+
+                                VStack(spacing: 0) {
+                                    ForEach(categories) { category in
+                                        CategoryRow(category: category)
+                                            .padding(.horizontal)
+                                    }
+
+                                    HStack {
+                                        Spacer()
+                                        Text("Show more")
+                                            .foregroundColor(Color(uiColor: .systemBlue))
+                                        Image(systemName: "chevron.down")
+                                            .foregroundColor(Color(uiColor: .systemBlue))
+                                        Spacer()
+                                    }
+                                    .padding(.vertical, 10)
+                                }
+                                .background(Color(uiColor: .secondarySystemBackground))
+                                .padding(.horizontal)
                             }
                             .offset(y: 5)
-                            
-                            VStack(spacing: 0) {
-                                ForEach(categories) { category in
-                                    CategoryRow(category: category)
-                                        .padding(.horizontal)
-                                }
-                                
-                                HStack {
-                                    Spacer()
-                                    Text("Show more")
-                                        .foregroundColor(Color(uiColor: .systemBlue))
-                                    Image(systemName: "chevron.down")
-                                        .foregroundColor(Color(uiColor: .systemBlue))
-                                    Spacer()
-                                }
-                                .padding(.vertical, 10)
-                            }
                             .padding(.bottom, 100)
                         }
                     }
                 }
-                
+
                 VStack {
                     Spacer()
                     HStack {
                         Spacer()
                         Button(action: {
-                            showingAddTransaction.toggle()
+                            showingActionSheet = true
                         }) {
                             ZStack {
                                 ZStack {
@@ -117,48 +121,63 @@ struct HomePage: View {
                                         .stroke(Color(red: 33/255, green: 59/255, blue: 128/255), lineWidth: 4)
                                         .frame(width: 60, height: 70)
                                         .rotationEffect(.degrees(45))
-                                    
+
                                     Circle()
                                         .trim(from: 0.12, to: 0.3)
                                         .stroke(Color(red: 255/255, green: 185/255, blue: 0/255), lineWidth: 4)
                                         .frame(width: 60, height: 70)
                                         .rotationEffect(.degrees(45))
-                                    
+
                                     Circle()
                                         .trim(from: 0.3, to: 0.6)
                                         .stroke(Color.blue, lineWidth: 4)
                                         .frame(width: 60, height: 70)
                                         .rotationEffect(.degrees(45))
-                                    
+
                                     Circle()
                                         .trim(from: 0.6, to: 0.85)
                                         .stroke(Color(red: 0/255, green: 188/255, blue: 56/255), lineWidth: 4)
                                         .frame(width: 60, height: 70)
                                         .rotationEffect(.degrees(45))
-                                    
+
                                     Circle()
                                         .trim(from: 0.85, to: 1)
                                         .stroke(Color(red: 255/255, green: 55/255, blue: 60/255), lineWidth: 4)
                                         .frame(width: 60, height: 70)
                                         .rotationEffect(.degrees(45))
                                 }
-                                
+
                                 Circle()
                                     .fill(Color.white)
                                     .frame(width: 50, height: 50)
                                     .shadow(radius: 5)
-                                
+
                                 Image(systemName: "plus")
                                     .resizable()
                                     .frame(width: 20, height: 20)
                                     .foregroundColor(.black)
                             }
                         }
+                        .actionSheet(isPresented: $showingActionSheet) {
+                            ActionSheet(
+                                title: Text("Add New"),
+                                message: Text("Choose what you want to add"),
+                                buttons: [
+                                    .default(Text("Add Transaction")) {
+                                        showingAddTransaction = true
+                                    },
+                                    .default(Text("Add Category")) {
+                                        showingAddCategory = true
+                                    },
+                                    .cancel()
+                                ]
+                            )
+                        }
                         .padding(.trailing, 25)
                         .padding(.bottom, 70)
                     }
                 }
-                
+
                 VStack {
                     Spacer()
                     HStack {
@@ -198,8 +217,11 @@ struct HomePage: View {
         .sheet(isPresented: $showingAddTransaction) {
             AddTransactionView(categories: $categories)
         }
+        .sheet(isPresented: $showingAddCategory) {
+            AddCategoryView(categories: $categories)
+        }
     }
-    
+
     private var headerView: some View {
         HStack {
             Image(systemName: "line.horizontal.3")
