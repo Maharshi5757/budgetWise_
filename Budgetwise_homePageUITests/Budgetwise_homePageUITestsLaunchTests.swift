@@ -1,10 +1,3 @@
-//
-//  Budgetwise_homePageUITestsLaunchTests.swift
-//  Budgetwise_homePageUITests
-//
-//  Created by Maharshi Brahmbhatt on 10/10/24.
-//
-
 import XCTest
 
 final class Budgetwise_homePageUITestsLaunchTests: XCTestCase {
@@ -21,9 +14,6 @@ final class Budgetwise_homePageUITestsLaunchTests: XCTestCase {
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
-
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
 
         let attachment = XCTAttachment(screenshot: app.screenshot())
         attachment.name = "Launch Screen"
