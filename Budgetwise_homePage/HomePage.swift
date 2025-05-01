@@ -14,6 +14,7 @@ struct HomePage: View {
     @State private var showingActionSheet = false
     @State private var showingAddTransaction = false
     @State private var selectedTab = "Home"
+    @State private var showAllCategories = false
 
     var totalSpent: Double {
         categories.reduce(0) { $0 + $1.spent }
@@ -83,20 +84,28 @@ struct HomePage: View {
                                 .padding(.horizontal)
 
                                 VStack(spacing: 0) {
-                                    ForEach(categories) { category in
+                                    ForEach(showAllCategories ? categories : Array(categories.prefix(5))) { category in
                                         CategoryRow(category: category)
                                             .padding(.horizontal)
                                     }
 
-                                    HStack {
-                                        Spacer()
-                                        Text("Show more")
-                                            .foregroundColor(Color(uiColor: .systemBlue))
-                                        Image(systemName: "chevron.down")
-                                            .foregroundColor(Color(uiColor: .systemBlue))
-                                        Spacer()
+                                    if categories.count > 3 {
+                                        Button(action: {
+                                            withAnimation {
+                                                showAllCategories.toggle()
+                                            }
+                                        }) {
+                                            HStack {
+                                                Spacer()
+                                                Text(showAllCategories ? "Show less" : "Show more")
+                                                    .foregroundColor(Color(uiColor: .systemBlue))
+                                                Image(systemName: showAllCategories ? "chevron.up" : "chevron.down")
+                                                    .foregroundColor(Color(uiColor: .systemBlue))
+                                                Spacer()
+                                            }
+                                            .padding(.vertical, 10)
+                                        }
                                     }
-                                    .padding(.vertical, 10)
                                 }
                                 .background(Color(uiColor: .secondarySystemBackground))
                                 .padding(.horizontal)
