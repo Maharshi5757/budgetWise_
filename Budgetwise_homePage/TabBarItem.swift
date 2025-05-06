@@ -1,26 +1,23 @@
 import SwiftUI
 
-import SwiftUI
-
 struct TabBarItem: View {
-    let iconName: String
+    let icon: Image
     let label: String
     let isSelected: Bool
     let selectedColor: Color
     
     var body: some View {
-        VStack {
-            Image(systemName: iconName)
+        VStack(spacing: 4) {
+            icon
                 .resizable()
-                .frame(width: 30, height: 30)
-                .foregroundColor(isSelected ? selectedColor : .black)
+                .scaledToFit()
+                .frame(width: 24, height: 24)
+                .foregroundColor(isSelected ? selectedColor : .gray)
+            
             Text(label)
-                .lineLimit(1)
-                .font(.caption)
-                .foregroundColor(isSelected ? selectedColor : .black)
+                .font(.system(size: 12))
+                .foregroundColor(isSelected ? selectedColor : .gray)
         }
-        .padding(5)
-        .cornerRadius(12)
     }
 }
 

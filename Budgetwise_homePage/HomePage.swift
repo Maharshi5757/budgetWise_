@@ -81,6 +81,7 @@ struct HomePage: View {
                                 }
                                 .padding(.horizontal)
                                 .background(Color(uiColor: .secondarySystemBackground))
+                                .cornerRadius(15)
                                 .padding(.horizontal)
 
                                 VStack(spacing: 0) {
@@ -108,6 +109,7 @@ struct HomePage: View {
                                     }
                                 }
                                 .background(Color(uiColor: .secondarySystemBackground))
+                                .cornerRadius(15)
                                 .padding(.horizontal)
                             }
                             .offset(y: 5)
@@ -191,30 +193,55 @@ struct HomePage: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        TabBarItem(iconName: "house.fill", label: "Home", isSelected: selectedTab == "Home", selectedColor: Color(uiColor: .systemBlue))
-                            .onTapGesture {
-                                selectedTab = "Home"
-                            }
+                        TabBarItem(
+                            icon: Image("home_icon"),
+                            label: "Home",
+                            isSelected: selectedTab == "Home",
+                            selectedColor: Color(uiColor: .systemBlue)
+                        )
+                        .onTapGesture {
+                            selectedTab = "Home"
+                        }
                         Spacer()
-                        TabBarItem(iconName: "chart.bar.fill", label: "Trends", isSelected: selectedTab == "Trends", selectedColor: Color(uiColor: .systemGreen))
-                            .onTapGesture {
-                                selectedTab = "Trends"
-                            }
+                        TabBarItem(
+                            icon: Image("trends_icon"),
+                            label: "Trends",
+                            isSelected: selectedTab == "Trends",
+                            selectedColor: Color(uiColor: .systemBlue)
+                        )
+                        .onTapGesture {
+                            selectedTab = "Trends"
+                        }
                         Spacer()
-                        TabBarItem(iconName: "dollarsign.circle.fill", label: "Transactions", isSelected: selectedTab == "Transactions", selectedColor: Color(uiColor: .systemPurple))
-                            .onTapGesture {
-                                selectedTab = "Transactions"
-                            }
+                        TabBarItem(
+                            icon: Image("transactions_icon"),
+                            label: "Transactions",
+                            isSelected: selectedTab == "Transactions",
+                            selectedColor: Color(uiColor: .systemBlue)
+                        )
+                        .onTapGesture {
+                            selectedTab = "Transactions"
+                        }
                         Spacer()
-                        TabBarItem(iconName: "message.fill", label: "Community", isSelected: selectedTab == "Community", selectedColor:Color(uiColor: .systemYellow))
-                            .onTapGesture {
-                                selectedTab = "Community"
-                            }
+                        TabBarItem(
+                            icon: Image("accounts_icon"),
+                            label: "Accounts",
+                            isSelected: selectedTab == "Accounts",
+                            selectedColor: Color(uiColor: .systemBlue)
+                        )
+                        .onTapGesture {
+                            selectedTab = "Accounts"
+                        }
                         Spacer()
-                        TabBarItem(iconName: "person.circle.fill", label: "Profile", isSelected: selectedTab == "Profile", selectedColor: Color(uiColor: .systemGray))
-                            .onTapGesture {
-                                selectedTab = "Profile"
-                            }
+                        TabBarItem(
+                            icon: Image("profile_icon"),
+                            label: "Profile",
+                            isSelected: selectedTab == "Profile",
+                            selectedColor: Color(uiColor: .systemBlue)
+                        )
+                        .onTapGesture {
+                            selectedTab = "Profile"
+                        }
                         Spacer()
                     }
                     .padding(.vertical, 0)

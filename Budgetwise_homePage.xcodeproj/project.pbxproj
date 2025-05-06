@@ -6,45 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		766E87972CB78E0C004D588D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 766E877E2CB78E0B004D588D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 766E87852CB78E0B004D588D;
-			remoteInfo = Budgetwise_homePage;
-		};
-		766E87A12CB78E0C004D588D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 766E877E2CB78E0B004D588D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 766E87852CB78E0B004D588D;
-			remoteInfo = Budgetwise_homePage;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		766E87862CB78E0B004D588D /* Budgetwise_homePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budgetwise_homePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		766E87962CB78E0C004D588D /* Budgetwise_homePageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Budgetwise_homePageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		766E87A02CB78E0C004D588D /* Budgetwise_homePageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Budgetwise_homePageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		76BF42432CCC4CA700AFF03F /* Exceptions for "Budgetwise_homePage" folder in "Budgetwise_homePage" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Preview Content/Assets.xcassets",
-			);
-			target = 766E87852CB78E0B004D588D /* Budgetwise_homePage */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		766E87882CB78E0B004D588D /* Budgetwise_homePage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				76BF42432CCC4CA700AFF03F /* Exceptions for "Budgetwise_homePage" folder in "Budgetwise_homePage" target */,
-			);
 			path = Budgetwise_homePage;
 			sourceTree = "<group>";
 		};
@@ -68,20 +36,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		766E87932CB78E0C004D588D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		766E879D2CB78E0C004D588D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				766E87862CB78E0B004D588D /* Budgetwise_homePage.app */,
-				766E87962CB78E0C004D588D /* Budgetwise_homePageTests.xctest */,
-				766E87A02CB78E0C004D588D /* Budgetwise_homePageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,52 +82,6 @@
 			productReference = 766E87862CB78E0B004D588D /* Budgetwise_homePage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		766E87952CB78E0C004D588D /* Budgetwise_homePageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 766E87AD2CB78E0C004D588D /* Build configuration list for PBXNativeTarget "Budgetwise_homePageTests" */;
-			buildPhases = (
-				766E87922CB78E0C004D588D /* Sources */,
-				766E87932CB78E0C004D588D /* Frameworks */,
-				766E87942CB78E0C004D588D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				766E87982CB78E0C004D588D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				766E87992CB78E0C004D588D /* Budgetwise_homePageTests */,
-			);
-			name = Budgetwise_homePageTests;
-			packageProductDependencies = (
-			);
-			productName = Budgetwise_homePageTests;
-			productReference = 766E87962CB78E0C004D588D /* Budgetwise_homePageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		766E879F2CB78E0C004D588D /* Budgetwise_homePageUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 766E87B02CB78E0C004D588D /* Build configuration list for PBXNativeTarget "Budgetwise_homePageUITests" */;
-			buildPhases = (
-				766E879C2CB78E0C004D588D /* Sources */,
-				766E879D2CB78E0C004D588D /* Frameworks */,
-				766E879E2CB78E0C004D588D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				766E87A22CB78E0C004D588D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				766E87A32CB78E0C004D588D /* Budgetwise_homePageUITests */,
-			);
-			name = Budgetwise_homePageUITests;
-			packageProductDependencies = (
-			);
-			productName = Budgetwise_homePageUITests;
-			productReference = 766E87A02CB78E0C004D588D /* Budgetwise_homePageUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,14 +94,6 @@
 				TargetAttributes = {
 					766E87852CB78E0B004D588D = {
 						CreatedOnToolsVersion = 16.0;
-					};
-					766E87952CB78E0C004D588D = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 766E87852CB78E0B004D588D;
-					};
-					766E879F2CB78E0C004D588D = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 766E87852CB78E0B004D588D;
 					};
 				};
 			};
@@ -214,28 +112,12 @@
 			projectRoot = "";
 			targets = (
 				766E87852CB78E0B004D588D /* Budgetwise_homePage */,
-				766E87952CB78E0C004D588D /* Budgetwise_homePageTests */,
-				766E879F2CB78E0C004D588D /* Budgetwise_homePageUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		766E87842CB78E0B004D588D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		766E87942CB78E0C004D588D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		766E879E2CB78E0C004D588D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,34 +134,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		766E87922CB78E0C004D588D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		766E879C2CB78E0C004D588D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		766E87982CB78E0C004D588D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 766E87852CB78E0B004D588D /* Budgetwise_homePage */;
-			targetProxy = 766E87972CB78E0C004D588D /* PBXContainerItemProxy */;
-		};
-		766E87A22CB78E0C004D588D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 766E87852CB78E0B004D588D /* Budgetwise_homePage */;
-			targetProxy = 766E87A12CB78E0C004D588D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		766E87A82CB78E0C004D588D /* Debug */ = {
@@ -406,6 +261,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Budgetwise_homePage/Preview Content\"";
@@ -435,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Budgetwise_homePage/Preview Content\"";
@@ -459,74 +316,6 @@
 			};
 			name = Release;
 		};
-		766E87AE2CB78E0C004D588D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "conan.Budgetwise-homePageTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budgetwise_homePage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Budgetwise_homePage";
-			};
-			name = Debug;
-		};
-		766E87AF2CB78E0C004D588D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "conan.Budgetwise-homePageTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Budgetwise_homePage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Budgetwise_homePage";
-			};
-			name = Release;
-		};
-		766E87B12CB78E0C004D588D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "conan.Budgetwise-homePageUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Budgetwise_homePage;
-			};
-			name = Debug;
-		};
-		766E87B22CB78E0C004D588D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "conan.Budgetwise-homePageUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Budgetwise_homePage;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,24 +333,6 @@
 			buildConfigurations = (
 				766E87AB2CB78E0C004D588D /* Debug */,
 				766E87AC2CB78E0C004D588D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		766E87AD2CB78E0C004D588D /* Build configuration list for PBXNativeTarget "Budgetwise_homePageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				766E87AE2CB78E0C004D588D /* Debug */,
-				766E87AF2CB78E0C004D588D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		766E87B02CB78E0C004D588D /* Build configuration list for PBXNativeTarget "Budgetwise_homePageUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				766E87B12CB78E0C004D588D /* Debug */,
-				766E87B22CB78E0C004D588D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
