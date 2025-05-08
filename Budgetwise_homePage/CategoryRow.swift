@@ -37,6 +37,7 @@ struct CategoryRow: View {
             ProgressView(value: category.spent, total: category.budget)
                 .scaleEffect(x: 1, y: 2, anchor: .center)
                 .padding(.horizontal, -40)
+                .tint(.green)
         }
         .padding(.vertical, 4)
     }

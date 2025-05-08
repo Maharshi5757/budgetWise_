@@ -194,6 +194,7 @@ struct HomePage: View {
                         Spacer()
                         TabBarItem(
                             icon: Image("home_icon"),
+                            selectedIcon: Image("onselect_home_icon"),
                             label: "Home",
                             isSelected: selectedTab == "Home",
                             selectedColor: Color(uiColor: .systemBlue)
@@ -204,6 +205,7 @@ struct HomePage: View {
                         Spacer()
                         TabBarItem(
                             icon: Image("trends_icon"),
+                            selectedIcon: Image("onselect_trend_icon"),
                             label: "Trends",
                             isSelected: selectedTab == "Trends",
                             selectedColor: Color(uiColor: .systemBlue)
@@ -214,6 +216,7 @@ struct HomePage: View {
                         Spacer()
                         TabBarItem(
                             icon: Image("transactions_icon"),
+                            selectedIcon: Image("onselect_transaction_icon"),
                             label: "Transactions",
                             isSelected: selectedTab == "Transactions",
                             selectedColor: Color(uiColor: .systemBlue)
@@ -224,6 +227,7 @@ struct HomePage: View {
                         Spacer()
                         TabBarItem(
                             icon: Image("accounts_icon"),
+                            selectedIcon: Image("onselect_account_icon"),
                             label: "Accounts",
                             isSelected: selectedTab == "Accounts",
                             selectedColor: Color(uiColor: .systemBlue)
@@ -234,6 +238,7 @@ struct HomePage: View {
                         Spacer()
                         TabBarItem(
                             icon: Image("profile_icon"),
+                            selectedIcon: Image("onselect_profile_icon"),
                             label: "Profile",
                             isSelected: selectedTab == "Profile",
                             selectedColor: Color(uiColor: .systemBlue)
