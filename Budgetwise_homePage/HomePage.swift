@@ -260,25 +260,40 @@ struct HomePage: View {
 
     private var headerView: some View {
         HStack {
-            Image(systemName: "line.horizontal.3")
+            Image("menu_icon")
+                .resizable()
+                .frame(width: 24, height: 24)
                 .foregroundColor(Color(uiColor: .white))
+            
             Spacer()
-            Text("April 2022")
-                .font(.system(size: 20))
-                .fontWeight(.bold)
-                .foregroundColor(Color(uiColor: .white))
-            Image(systemName: "chevron.down")
-                .foregroundColor(Color(uiColor: .white))
-            Spacer()
-            HStack(spacing: 20) {
-                Image(systemName: "square.and.arrow.up")
+            
+            HStack(spacing: 8) {
+                Text("April 2022")
+                    .font(.system(size: 20))
+                    .fontWeight(.bold)
                     .foregroundColor(Color(uiColor: .white))
-                Image(systemName: "ellipsis")
+                Image("down_icon")
+                    .resizable()
+                    .frame(width: 24, height: 24)
+                    .foregroundColor(Color(uiColor: .white))
+            }
+            .frame(maxWidth: .infinity)  // This will center the HStack
+            
+            Spacer()
+            
+            HStack(spacing: 20) {
+                Image("share_icon")
+                    .resizable()
+                    .frame(width: 24, height: 24)
+                    .foregroundColor(Color(uiColor: .white))
+                Image("fav_tracker_icon")
+                    .resizable()
+                    .frame(width: 24, height: 24)
                     .foregroundColor(Color(uiColor: .white))
             }
         }
         .padding(.top)
-        .padding(.horizontal,20)
+        .padding(.horizontal, 20)
         .foregroundColor(.white)
     }
 }

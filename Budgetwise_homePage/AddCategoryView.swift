@@ -9,9 +9,7 @@ struct AddCategoryView: View {
     @State private var selectedColor = Color.blue
     @State private var budget: String = ""
     
-    let icons = ["cart", "fork.knife", "car", "book", "basket", "house.fill",
-                 "gift", "medical.thermometer", "airplane", "gamecontroller",
-                 "tv", "phone", "creditcard", "gym.bag", "cross"]
+    let icons = ["food_icon","shopping_icon","transportation_icon","housing_icon","gift_icon","travel_icon","healthcare_icon","entertainment_icon","education_icon","income_icon","insurance_icon","office_icon","pet_icon","childcare_icon","transfer_icon","transfer_out_icon","transfer_in_icon","donation_icon","groceries_icon","loans_icon","miscellaneous_icon","home_improvement_icon","bank_fees_icon","saving_icon","subscription_icon","utilities_icon","personal_icon","uncategorized_icon"]
     
     let colors: [Color] = [
         Color(red: 33/255, green: 59/255, blue: 128/255),
@@ -35,7 +33,7 @@ struct AddCategoryView: View {
                 Section(header: Text("Select Icon")) {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 5), spacing: 15) {
                         ForEach(icons, id: \.self) { icon in
-                            Image(systemName: icon)
+                            Image(icon)
                                 .font(.title2)
                                 .frame(width: 50, height: 50)
                                 .background(selectedIcon == icon ? selectedColor.opacity(0.2) : Color.clear)
