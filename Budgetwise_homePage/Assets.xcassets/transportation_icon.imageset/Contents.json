@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Transportation.pdf",
+      "filename" : "transportation.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Transportation 1.pdf",
+      "filename" : "transportation 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Transportation 2.pdf",
+      "filename" : "transportation 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

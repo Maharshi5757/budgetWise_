@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "transfer out.pdf",
+      "filename" : "Transfer out.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "transfer out 1.pdf",
+      "filename" : "Transfer out 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "transfer out 2.pdf",
+      "filename" : "Transfer out 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

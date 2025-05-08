@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Pets.pdf",
+      "filename" : "pet.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Pets 1.pdf",
+      "filename" : "pet 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Pets 2.pdf",
+      "filename" : "pet 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

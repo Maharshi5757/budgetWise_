@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Subscriptions.pdf",
+      "filename" : "subscriptions.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Subscriptions 1.pdf",
+      "filename" : "subscriptions 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Subscriptions 2.pdf",
+      "filename" : "subscriptions 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

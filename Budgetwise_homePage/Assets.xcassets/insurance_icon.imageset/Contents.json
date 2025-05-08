@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Insurance.pdf",
+      "filename" : "insurance.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Insurance 1.pdf",
+      "filename" : "insurance 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Insurance 2.pdf",
+      "filename" : "insurance 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

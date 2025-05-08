@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Gift.pdf",
+      "filename" : "gift.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Gift 1.pdf",
+      "filename" : "gift 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Gift 2.pdf",
+      "filename" : "gift 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

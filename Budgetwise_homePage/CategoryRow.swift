@@ -5,22 +5,22 @@ struct CategoryRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Image(systemName: category.iconName)
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .padding(10)
-                                    .background(category.color)
-                                    .foregroundColor(.white)
-                                    .clipShape(Circle())
-                                    .padding(.horizontal,1)
-
+                Image(category.iconName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 40, height: 40)
+                    .padding(10)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .padding(.leading, -35)
                 
                 Text(category.name)
                     .fontWeight(.bold)
                     .font(.system(size: 17))
+                    .padding(.leading, -11)
                 Spacer()
                 
-                VStack(alignment: .trailing, spacing: 2) {
+                VStack(alignment: .trailing, spacing: 6) {
                     Text("$\(category.spent, specifier: "%.0f")")
                         .foregroundColor(.green)
                     + Text(" of $\(category.budget, specifier: "%.0f")")
@@ -29,21 +29,15 @@ struct CategoryRow: View {
                     let remaining = category.budget - category.spent
                     Text("$\(remaining, specifier: "%.0f") left")
                         .foregroundColor(.secondary)
-                    
                 }
-                .padding(.horizontal)
+                .padding(.trailing, 5)
             }
-            
-            VStack {
-                ProgressView(value: category.spent, total: category.budget)
-                    .tint(category.color)
-                    .scaleEffect(x: 1, y: 2, anchor: .center)
-                    .padding(.top, 4)
-                
-                Spacer(minLength: 10)
-            }
-            
             .padding(.vertical, 8)
+            
+            ProgressView(value: category.spent, total: category.budget)
+                .scaleEffect(x: 1, y: 2, anchor: .center)
+                .padding(.horizontal, -40)
         }
+        .padding(.vertical, 4)
     }
 }

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Childcare.pdf",
+      "filename" : "childcare.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Childcare 1.pdf",
+      "filename" : "childcare 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Childcare 2.pdf",
+      "filename" : "childcare 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

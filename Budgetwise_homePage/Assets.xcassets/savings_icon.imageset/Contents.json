@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Savings.pdf",
+      "filename" : "saving.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Savings 1.pdf",
+      "filename" : "saving 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Savings 2.pdf",
+      "filename" : "saving 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

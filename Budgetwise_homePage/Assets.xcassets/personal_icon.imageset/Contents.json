@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Personal.pdf",
+      "filename" : "personal.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Personal 1.pdf",
+      "filename" : "personal 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Personal 2.pdf",
+      "filename" : "personal 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

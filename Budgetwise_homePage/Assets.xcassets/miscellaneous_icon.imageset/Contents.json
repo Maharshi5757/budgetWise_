@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Miscellaneous.pdf",
+      "filename" : "miscellaneous.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Miscellaneous 1.pdf",
+      "filename" : "miscellaneous 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Miscellaneous 2.pdf",
+      "filename" : "miscellaneous 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

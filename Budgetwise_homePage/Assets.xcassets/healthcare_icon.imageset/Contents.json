@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Healthcare.pdf",
+      "filename" : "healthcare.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Healthcare 1.pdf",
+      "filename" : "healthcare 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Healthcare 2.pdf",
+      "filename" : "healthcare 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

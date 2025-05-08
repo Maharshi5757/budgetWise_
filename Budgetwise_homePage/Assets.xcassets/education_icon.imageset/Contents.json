@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Education.pdf",
+      "filename" : "education.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Education 1.pdf",
+      "filename" : "education 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Education 2.pdf",
+      "filename" : "education 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
