@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Home.pdf",
+      "filename" : "housing.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Home 1.pdf",
+      "filename" : "housing 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Home 2.pdf",
+      "filename" : "housing 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

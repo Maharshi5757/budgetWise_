@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Home.pdf",
+      "filename" : "Office.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Home 1.pdf",
+      "filename" : "Office 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Home 2.pdf",
+      "filename" : "Office 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

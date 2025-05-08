@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Home.pdf",
+      "filename" : "share_icon.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Home 1.pdf",
+      "filename" : "share_icon 1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Home 2.pdf",
+      "filename" : "share_icon 2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
